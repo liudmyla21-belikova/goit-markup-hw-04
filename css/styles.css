@@ -346,6 +346,7 @@ a {
 
 .sumb {
   position: relative;
+  overflow: hidden;
 }
 
 .overlay {
@@ -361,11 +362,9 @@ a {
   padding: 40px 32px;
   top: 0;
   left: 0;
-  overflow: hidden;
   transform: translateY(100%);
   opacity: 0;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-title {
@@ -404,7 +403,7 @@ a {
 }
 
 .portfolio-item:hover .overlay {
-  transform: translateY(0%);
+  transform: translateY(0);
   opacity: 1;
 }
 
